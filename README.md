@@ -1,59 +1,46 @@
-# GifApp
+# Gifs APP
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+Este proyecto fue generado usando Angular CLI version 19.2.15
 
-## Development server
+### Development Server
 
-To start a local development server, run:
-
+Para iniciar un servidor de desarrollo local. Una vez que el servidor esté en funcionamiento, abra su navegador y navegue a `http://localhost:4200`
 ```bash
-ng serve
+ng serve --open
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+### Code Scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+Iniciar un proyecto angular
 ```bash
-ng generate component component-name
+sudo ng new bases
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+Crear variables de entorno
 ```bash
-ng generate --help
+ng g environments
 ```
 
-## Building
-
-To build the project run:
-
+Crear componentes
 ```bash
-ng build
+ng g c gifs/components/sideMenu --skip-tests 
+ng g c gifs/components/sideMenuHeader --skip-tests
+ng g c gifs/components/sideMenuOptions --skip-tests 
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+### Devs
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. Clonar repositorio `git clone git@github.com:JorgeLagos/angular-gifs-app.git`
+2. Instalar dependencias `npm install`
+3. Iniciar servidor local `ng serve -o`
+4. Navegar `http://localhost:4200`
 
+
+### Building
+
+Para construir el proyecto. Esto compilará tu proyecto y almacenará la compilación en el directorio `dist`. De forma predeterminada, la compilación de producción optimiza el rendimiento y la velocidad de tu aplicación
 ```bash
-ng test
+ng build --configuration production
 ```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
