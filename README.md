@@ -14,7 +14,7 @@ ng serve --open
 
 Iniciar un proyecto angular
 ```bash
-sudo ng new bases
+ng new project-name
 ```
 
 Crear variables de entorno
