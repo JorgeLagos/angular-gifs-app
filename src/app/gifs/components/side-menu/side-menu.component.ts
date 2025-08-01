@@ -6,8 +6,7 @@ import { SideMenuOptionsComponent } from './side-menu-options/side-menu-options.
 @Component({
   selector: 'app-side-menu',
   imports: [SideMenuHeaderComponent, SideMenuOptionsComponent],
-  templateUrl: './side-menu.component.html',
-  styleUrl: './side-menu.component.css'
+  templateUrl: './side-menu.component.html'
 })
 export class SideMenuComponent {
 
